@@ -11,11 +11,11 @@ The user interface itself is described in the resources folder as app.fxml and w
 
 ## Building the project
 
-From inside the project folder, invoke `mvn build`.
+You must have Java 11 or higher installed as well as Apache Maven. From inside the project folder, invoke `mvn build`.
 
 ## Running Stanners
 
-The jar file produced by the build is not a self-executing jar file.  To execute Stanners, use `mvn javafx:run` which invokes the [JavaFX Maven plugin](https://github.com/openjfx/javafx-maven-plugin) to start the program and prepare the java classpath.
+The jar file produced by the build is not a self-executing jar file.  To execute Stanners, use `mvn javafx:run` which invokes the [JavaFX Maven plugin](https://github.com/openjfx/javafx-maven-plugin) to prepare the java classpath and start the program.
 
 ## Data sources
 
