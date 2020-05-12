@@ -31,5 +31,17 @@ The data sources come from three other research tools:
 The goal of Stanners is to combine the data of these three programs (Perceval provides commit messages, which are prepared for SentiStrength-SE; SZZUnleashed provides commit classification which is then summarized and combined with SentiStrength-SE and Perceval results.)
 
 ## Example
-The example folder contains a full list of commits from Jenkins, prepared by Perceval.  The selected commits (those which actually contain java classes) were provided to and analyzed by SentiStrength-SE.  The SZZUnlimited processing output is also provided in the results folder, but it is worth noting that SZZUnlimited froze before fully outputting all results so only partial results were available for analysis.
+The example folder contains a full list of commits from Jenkins, prepared by Perceval.  
+
+Note that the Perceval json file was compressed in order to be uploaded to Github and prior to using it you must first decompress the file.
+
+The selected commits (those which actually contain java classes) were provided to and analyzed by SentiStrength-SE.  The SZZUnlimited processing output is also provided in the results folder, but it is worth noting that SZZUnlimited froze before fully outputting all results so only partial results were available for analysis.
 The collated output is provided in the Final results folder for further inspection.  The Excel spreadsheet filtered out the data such that any rows not analyzed by SentiStrength-SE were not reflected in the final output.
+
+## What's with the name?
+
+<img src="images/image-20200512114826549.png" alt="image-20200512114826549" style="zoom:25%;" />
+
+Stanners is the name of the titular character of the Aardman Animations series "Angry Kid."  He's frequently getting himself into trouble due to his uncontrollable and puerile actions, usually with flagrant disregard for the damage caused in his wake.
+
+Since my initial hypothesis was to look for a correlation between negative sentiment and bug-inducing behavior, it seemed a fitting enough name.  Also because "Utility to collate data from three other programs" doesn't really roll off the tongue as nicely as "Stanners."
