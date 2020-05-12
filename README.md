@@ -40,7 +40,7 @@ The collated output is provided in the Final results folder for further inspecti
 
 ## What's with the name?
 
-<img src="images/image-20200512114826549.png" alt="image-20200512114826549" style="zoom:25%;" />
+<img src="https://vignette.wikia.nocookie.net/villains/images/e/e8/Angry_Kid_Transparent.png/revision/latest?cb=20170429122503" alt="Angry Kid, Copyright Aardman Animations" style="zoom:25%;" />
 
 Stanners is the name of the titular character of the Aardman Animations series "Angry Kid."  He's frequently getting himself into trouble due to his uncontrollable and puerile actions, usually with flagrant disregard for the damage caused in his wake.
 
