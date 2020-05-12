@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.TextFlow?>
+
+<VBox prefHeight="600.0" prefWidth="800.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.badvision.stanners.AppController">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Git Tools">
+            <content>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#loadPercevalLog" text="Load Git Log (Perceval Format)" />
+                        <Label fx:id="percevalStatus" text="No git log loaded yet" />
+                        <Button mnemonicParsing="false" onAction="#loadSZZData" text="Load SZZ Unleashed Results" />
+                        <Label fx:id="szzStatus" text="No SZZ results loaded yet" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </VBox>
+            </content>
+          </Tab>
+          <Tab text="Sentiment">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#createCommitMessageSentimentFile" text="Prepare input file for git comments" />
+                        <Button layoutX="14.0" layoutY="45.0" mnemonicParsing="false" onAction="#loadSentimentScores" text="Load sentiment results for git comments" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Analysis">
+            <content>
+                  <VBox spacing="5.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#performAnalysis" text="Perform Analysis" />
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding></VBox>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+         <content>
+            <TextFlow fx:id="log" minHeight="-Infinity" minWidth="-Infinity" prefWidth="780.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</VBox>
